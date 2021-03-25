@@ -13,7 +13,7 @@
 <style>
 	
 	
-footer { 
+ffooter { 
   display: flex; 
   align-items: center; 
 } 
@@ -55,17 +55,23 @@ body, html {
 
 <div class="w3-top">
   <div class="w3-bar" id="myNavbar">
-
-     
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
     </a>
+    <a href="#intro" class="w3-bar-item w3-button">INTRODUCTION</a>
     <a href="#densitylab" class="w3-bar-item w3-button">DENSITY PROGRAM</a>
     <a href="#caliper" class="w3-bar-item w3-button">CALIPER PROGRAM</a>
- 
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
     </a>
   </div>
  
   </div>
-</div>
+
+<div class="w3-content w3-container w3-padding-64" id="intro">
+  <h3 class="w3-center">Introduction</h3>
+  <p class="w3-center">The main objectives of these programs are to have a greater understanding of density and to learn how to utilize and manipulate a caliper tool. Due to students' inability of conducting these experiment and having access to certain tools, this website offers a way of doing so virtually.
+  </p>
+  <div class="w3-row">
 
 <div class="w3-content w3-container w3-padding-64" id="densitylab">
   <h3 class="w3-center">Phet Density Program</h3>
@@ -77,13 +83,26 @@ body, html {
   <h3 class="w3-center">Caliper Simulator</h3>
   <div class="w3-row">
 
+<html><body>
+ <p>
+  <applet code="Main.class" archive="Caliper.jar"
+   width="740" height="400"></applet>
+ </p>
+ <p>
+  <object codetype="application/java" classid="java:Main.class"
+   archive="Caliper.jar" width="740" height="400"></object>
+ </p>
+</body></html>
 
-
-  
-
+  <div class="w3-content w3-container w3-padding-64" id="about">
+<h3 class="w3-center">About</h3>
 	
 <div style="display:inline-block;vertical-align:top;"></div>
-   
+    <img src="bangs.jpg" alt="bangs" width="440" height="600" style="padding: 10px;" >
+</div>
+<div style="display:inline-block;">
+    <div>The COVID-19 Pandemic has changed the way teaching is done.  School closures and safety protocol prevent students from conducting research in a hands-on, physical environment.  Mr. Bangs, along with his group of zero-period research students at the Roselle Park High School, collaborated to emulate the lab process in an online learning environment, enabling students to apply their knowledge into a real-world scenario.</div>
+</div>
 	
 	</div>
   </div>
@@ -93,7 +112,10 @@ body, html {
   
 </body>
 	
-  
+  <footer>
+  <b>Created By: Raymond Bangs, Matthew Alvarez, Christopher Luciano, Harnoor Randhawa, Rishabh Raj Dhingra</b>
+ 
+</footer>
 
 	
 <script>
