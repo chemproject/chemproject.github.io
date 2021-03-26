@@ -12,19 +12,13 @@
 
 <style>
 	
-	
-footer { 
-  display: flex; 
-  align-items: center; 
-} 
+.a{
+ position: center;
+}
 	
 img {
   border: 5px solid rgb(196, 185, 185);
 }
-
-
-
-
 
 body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
 body, html {
@@ -32,8 +26,6 @@ body, html {
   color: rgb(100, 100, 100);
   line-height: 1.8;
 }
-
-
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
@@ -82,47 +74,31 @@ body, html {
 <div class="w3-content w3-container w3-padding-64" id="caliper">
   <h3 class="w3-center">Caliper Simulator</h3>
   <div class="w3-row">
-	  
-<a href="Caliper.jar" download>
-  <img src="/images/myw3schoolsimage.jpg" width="104" height="142">
-</a>
-
-	
-
-  
-  
+    <a href="Caliper.jar" download>
+    <img src="myw3schoolsimage.jpg">
+    </a>
 </body>
-	
-  <footer>
-  <b>Created By: Raymond Bangs, Matthew Alvarez, Christopher Luciano, Harnoor Randhawa, Rishabh Raj Dhingra</b>
- 
+<footer>
+<h6 style="text-align: center;">Created By: Raymond Bangs, Matthew Alvarez, Christopher Luciano, Harnoor Randhawa, Rishabh Raj Dhingra</h6>
 </footer>
 
 	
 <script>
-
-
-
-
-window.onscroll = function() {myFunction()};
-function myFunction() {
-    var navbar = document.getElementById("myNavbar");
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
-    } else {
-        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white");
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var navbar = document.getElementById("myNavbar");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+        } else {
+            navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white");
+        }
     }
-}
-
-
-function toggleFunction() {
-    var x = document.getElementById("navDemo");
-    if (x.className.indexOf("w3-show") == -1) {
-        x.className += "w3-show";
-    } else {
-        x.className = x.className.replace(" w3-show", "");
+    function toggleFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += "w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
     }
-}
-
-
 <script/>
